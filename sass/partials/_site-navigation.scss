@@ -1,13 +1,19 @@
 /* # Table of Contents
 - Site Navigation
-	- Header Navigation
+	- Accessible Menu
+	- Site Header Navigation
 	- Primary Navigation
 	- Secondary Navigation
+	- Skip Links
 */
+
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
 
 .genesis-nav-menu {
 	clear: both;
 	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 1;
 	width: 100%;
 }
@@ -19,14 +25,18 @@
 
 .genesis-nav-menu a {
 	color: #333;
+	text-decoration: none;
 	display: block;
-	padding: 20px 14px;
+	padding: 30px 24px;
 }
 
 .genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus,
 .genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #e5554e;
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
+	color: #c3251d;
+	text-decoration: underline;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -45,11 +55,13 @@
 .genesis-nav-menu .sub-menu a {
 	background-color: #fff;
 	border: 1px solid #eee;
-	border-top: none;
+	border-top: 0;
 	font-size: 14px;
+	font-size: 1.4rem;
 	padding: 20px;
 	position: relative;
 	width: 200px;
+	word-wrap: break-word;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
@@ -93,6 +105,19 @@
 	padding: 10px 0 0;
 }
 
+/* ## Accessible Menu
+--------------------------------------------- */
+
+.menu .menu-item:focus {
+	position: static;
+}
+
+.menu .menu-item > a:focus + ul.sub-menu,
+.menu .menu-item.sfHover > ul.sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
 /* ## Site Header Navigation
 --------------------------------------------- */
 
@@ -112,26 +137,54 @@
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: #00265a;
+	background-color: #333;
 }
 
 .nav-primary .genesis-nav-menu a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.nav-primary .genesis-nav-menu a:hover,
+.nav-primary .genesis-nav-menu a:focus,
+.nav-primary .genesis-nav-menu .current-menu-item > a {
 	color: #fff;
+	text-decoration: underline;
 }
 
 .nav-primary .genesis-nav-menu .sub-menu a {
 	color: #333;
 }
 
-.nav-primary .genesis-nav-menu a:hover,
-.nav-primary .genesis-nav-menu .current-menu-item > a,
-.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #e5554e;
+.nav-primary .genesis-nav-menu .sub-menu a:hover,
+.nav-primary .genesis-nav-menu .sub-menu a:focus,
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
+	color: #c3251d;
+	text-decoration: underline;
 }
 
 /* ## Secondary Navigation
 --------------------------------------------- */
 
 .nav-secondary {
-	background-color: #eee;
+	background-color: #fff;
+}
+
+/* ## Skip Links
+--------------------------------------------- */
+
+.genesis-skip-link {
+	margin: 0;
+}
+
+.genesis-skip-link li {
+	height: 0;
+	width: 0;
+	list-style: none;
+}
+
+/* Display outline on focus */
+:focus {
+	color: #333;
+	outline: #ccc solid 1px;
 }

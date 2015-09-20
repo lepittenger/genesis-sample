@@ -23,17 +23,19 @@
 
 .enews-widget input {
 	font-size: 16px;
+	font-size: 1.6rem;
 	margin-bottom: 16px;
 }
 
 .enews-widget input[type="submit"] {
-	background-color: #e5554e;
+	background-color: #c3251d;
 	color: #fff;
 	margin: 0;
 	width: 100%;
 }
 
-.enews-widget input:hover[type="submit"] {
+.enews-widget input:hover[type="submit"],
+.enews-widget input:focus[type="submit"]  {
 	background-color: #fff;
 	color: #333;
 }

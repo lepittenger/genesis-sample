@@ -2,16 +2,18 @@
 - Footer Widgets
 */
 
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
 .footer-widgets {
-	background-color: #eee;
-	border-top: 3px solid #ccc;
+	background-color: #333;
 	clear: both;
 	padding-top: 40px;
 }
 
 .footer-widgets,
 .footer-widgets a {
-	color: #999;
+	color: #aaa;
 }
 
 .footer-widgets input {
@@ -19,7 +21,8 @@
 }
 
 .footer-widgets a.button,
-.footer-widgets a:hover {
+.footer-widgets a:hover,
+.footer-widgets a:focus {
 	color: #fff;
 }
 

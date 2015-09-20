@@ -6,6 +6,9 @@
 	- Max-width: 800px
 */
 
+/* # Media Queries
+---------------------------------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 1200px) {
 
 	.site-inner,
@@ -28,6 +31,11 @@
 	.sidebar-sidebar-content .content,
 	.content-sidebar-sidebar .content {
 		width: 400px;
+	}
+
+	.sidebar-primary,
+	.title-area {
+		width: 300px;
 	}
 
 	.footer-widgets-1,
@@ -54,11 +62,11 @@
 	.content,
 	.content-sidebar-sidebar .content,
 	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content,
+	.sidebar-content-sidebar .content-sidebar-wrap,
 	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3,
-	.sidebar-content-sidebar .content,
-	.sidebar-content-sidebar .content-sidebar-wrap,
 	.sidebar-primary,
 	.sidebar-secondary,
 	.sidebar-sidebar-content .content,
@@ -72,7 +80,7 @@
 		padding: 20px 5%;
 	}
 
-	.header-image .title-area {
+	.header-image .site-title > a {
 		background-position: center top;
 	}
 
@@ -115,6 +123,7 @@
 	body {
 		background-color: #fff;
 		font-size: 16px;
+		font-size: 1.6rem;
 	}
 
 	.site-inner,

@@ -38,12 +38,14 @@
 .author-box {
 	background-color: #fff;
 	font-size: 16px;
+	font-size: 1.6rem;
 	margin-bottom: 40px;
 	padding: 40px;
 }
 
 .author-box-title {
 	font-size: 16px;
+	font-size: 1.6rem;
 	margin-bottom: 4px;
 }
 
@@ -85,10 +87,12 @@
 
 .archive-title {
 	font-size: 20px;
+	font-size: 2rem;
 }
 
 .entry-title {
 	font-size: 36px;
+	font-size: 3.6rem;
 }
 
 .entry-title a,
@@ -96,17 +100,19 @@
 	color: #333;
 }
 
-.entry-title a:hover {
-	color: #e5554e;
+.entry-title a:hover,
+.entry-title a:focus {
+	color: #c3251d;
 }
 
 .widget-title {
 	font-size: 18px;
+	font-size: 1.8rem;
 	margin-bottom: 20px;
 }
 
 .footer-widgets .widget-title {
-	color: #333;
+	color: #fff;
 }
 
 /* ## WordPress
@@ -162,6 +168,7 @@ img.alignright,
 
 .wp-caption-text {
 	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: 700;
 	text-align: center;
 }
@@ -171,4 +178,10 @@ img.alignright,
 }
 
 .sticky {
+}
+
+.entry-content .wp-audio-shortcode,
+.entry-content .wp-playlist,
+.entry-content .wp-video {
+	margin: 0 0 28px;
 }
